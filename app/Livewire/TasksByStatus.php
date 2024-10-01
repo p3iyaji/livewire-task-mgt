@@ -2,17 +2,17 @@
 
 namespace App\Livewire;
 
-use Livewire\Attributes\On;
 use Livewire\Attributes\Reactive;
 use Livewire\Component;
 
-class TotalTaskCount extends Component
+class TasksByStatus extends Component
 {
+
     #[Reactive]
-    public $count;
+    public $tasksByStatus;
+
     public function render()
     {
-        return view('livewire.total-task-count');
+        return view('livewire.tasks-by-status');
     }
 }
-

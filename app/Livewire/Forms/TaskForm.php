@@ -21,10 +21,12 @@ class TaskForm extends Form
     #[Validate('required')]
     public $deadline;
 
+
     public function createTask()
     {
         auth()->user()->tasks()->create($this->all());
-        session()->flash('success', 'Task added successfully');
+
+        request()->session()->flash('success', 'Task added successfully');
     }
 
     public function editTask()

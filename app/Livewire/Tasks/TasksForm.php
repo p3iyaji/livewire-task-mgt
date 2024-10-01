@@ -10,6 +10,9 @@ class TasksForm extends Component
 {
 
     public TaskForm $form;
+    public $flashmessage;
+
+
 
     public function save()
     {

@@ -5,8 +5,7 @@
             <p class="text-lg mt-2 text-gray-600">This is your personal Task Manager</p>
         </div>
 
-        <livewire:flashmessage />
-
+        @include('flashmessage')
 
         <div class="mb-5">
             <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Title</label>

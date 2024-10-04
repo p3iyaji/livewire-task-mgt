@@ -7,11 +7,12 @@ use Livewire\Component;
 class GittestComponent extends Component
 {
 
-    public $product;
+    public $product, $anotherthing;
 
     public function mount()
     {
         $this->product = "Right here Ok!";
+        $this->anotherthing = "Lost is also a very good movie";
     }
     public function render()
     {

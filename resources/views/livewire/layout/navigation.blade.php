@@ -39,9 +39,14 @@ new class extends Component
                         {{ __('Tasks') }}
                     </x-nav-link>
                 </div>
+{{--                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">--}}
+{{--                    <x-nav-link class="text-white text-xl" :href="route('gittest')" :active="request()->routeIs('/gittest')" wire:navigate>--}}
+{{--                        {{ __('Gittest') }}--}}
+{{--                    </x-nav-link>--}}
+{{--                </div>--}}
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link class="text-white text-xl" :href="route('gittest')" :active="request()->routeIs('/gittest')" wire:navigate>
-                        {{ __('Gittest') }}
+                    <x-nav-link class="text-white text-xl" :href="route('soccerworld')" :active="request()->routeIs('/soccerworld')" wire:navigate>
+                        {{ __('Soccer') }}
                     </x-nav-link>
                 </div>
             </div>
